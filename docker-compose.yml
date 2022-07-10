@@ -1,0 +1,8 @@
+version "3.7"
+services:
+  aws-cdk:
+    image: nicballesteros/aws-cdk:latest
+    volumes:
+      - .:/workspace
+      - $HOME/.aws
+
