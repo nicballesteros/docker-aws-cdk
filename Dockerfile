@@ -1,4 +1,4 @@
-FROM node:16.16.0-buster-slim
+FROM node:22.15.1-alpine3.20
 
 WORKDIR /workspace
 
@@ -13,6 +13,6 @@ RUN /usr/aws/install
 RUN rm /usr/awscliv2.zip
 
 # Install AWS CDK
-RUN npm i --location=global aws-cdk
+RUN npm i --location=global aws-cdk@latest
 
 ENTRYPOINT cdk
