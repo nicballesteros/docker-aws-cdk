@@ -13,6 +13,6 @@ RUN /usr/aws/install
 RUN rm /usr/awscliv2.zip
 
 # Install AWS CDK
-RUN npm i --location=global aws-cdk
+RUN npm i --location=global aws-cdk@latest
 
 ENTRYPOINT cdk
